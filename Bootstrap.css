@@ -1,0 +1,7 @@
+.row{
+    background-color: rgb(207, 207, 10);
+}
+.col{
+    background-color: rgb(247, 151, 166);
+    padding: 0.5rem;
+}
