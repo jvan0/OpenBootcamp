@@ -1,0 +1,52 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: space-between;
+    background-color: brown;
+}
+.barraIzq{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background-color: beige;
+    padding: 0.5rem;
+}
+.barraDer{
+    background-color: cyan;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+.elementos{
+
+    background-color: aqua;
+    padding: 0.5rem;
+}
+.barra{
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    padding: 0.5rem;
+}
+@media (max-width: 640px){
+    .barraIzq{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .container{
+        flex-direction: column-reverse;
+
+    }
+}
+/*
+Una barra lateral izquierda con tres elementos en vertical. Una sección principal a la derecha.
+(Tip: Utiliza la disposición flex donde la sección principal utilizará flex-grow)
+Utiliza las media queries para que cuando el ancho del viewport sea menor de 640px ocurra lo siguiente:
+La barra lateral izquierda se muestre como una navegación en la parte inferior
+La disposición de los elementos de la barra lateral se vuelva horizontal
+(Tip: Trabaja con la propiedad flex-direction) */
