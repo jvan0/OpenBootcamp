@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bootstrap2.css">
+</head>
+<body>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Hola! Bienvenido.</h1>
+            <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nulla qui eum vero asperiores! Commodi asperiores repellat fugit sunt inventore libero repudiandae maxime, pariatur optio? Architecto eligendi vero iure eveniet.</p>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary btn-lg" id="liveAlertBtn">Boton Success</button>
+        </div>
+    </div>
+    <div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pedro Gomez">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Numero de Telefono.</label>
+        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="011457892">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    </div>
+    <hr>
+    <div class="container container-card">
+        <div class="card " style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">Cassou Juan</h5>
+            <p class="card-text">Soy desarrolador Web. Mis habilidades como Front son el uso de HTML,CSS, JavaScript. Con la utilizacion de librerias y frameworks cono Bootstrap y ReactJS. </p>
+            <p>Debajo tienes mi mail en caso de contacto.</p>
+            <a href="mailto:juanbcassou@gmail.com" class="card-link">juanbcassou@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script>const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+    
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert('Excelente, tu boton se ha completado con éxito!', 'success')
+      })
+    }
+    </script>
+</html>
