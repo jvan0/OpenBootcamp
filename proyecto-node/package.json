@@ -1,0 +1,13 @@
+{
+  "name": "proyect-node",
+  "version": "1.0.0",
+  "description": "Este es mi primer proyecto de JS con Node en OpenBootcamp ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "saludar":"node hola_mundo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jvan0",
+  "license": "ISC"
+}
