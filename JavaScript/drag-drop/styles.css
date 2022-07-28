@@ -1,0 +1,24 @@
+
+.section{
+    background-color: darkmagenta;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.parrafo{
+    background-color: rgb(255, 240, 255);
+    color: blueviolet;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.parrafo.dragging{
+    opacity: 0.5;
+}
+.image{
+    text-align: end;
+    padding-right: 28rem;
+}
+.papelera{
+    width: 80px;
+}
